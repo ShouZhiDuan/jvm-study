@@ -1,7 +1,5 @@
 package com.demo.jvm.serializable_test;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.io.*;
 
 /**
