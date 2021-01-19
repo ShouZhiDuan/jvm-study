@@ -1,6 +1,6 @@
 package com.demo.jvm.other_test;
 
-import java.net.URLClassLoader;
+
 
 /**
  * @Auther: ShouZhi@Duan
@@ -22,8 +22,12 @@ public class B extends A {
     }
 
     public static void main(String[] args) {
-        B a = new B();
+        A a = new B();
+        a.a = 20;
         a.classLoad();
+        System.out.println(a.a);
+        String s = new String();
+        System.out.println(s.getClass().getClassLoader());
     }
 
 
