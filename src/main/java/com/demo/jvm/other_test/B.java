@@ -28,6 +28,9 @@ public class B extends A {
         System.out.println(a.a);
         String s = new String();
         System.out.println(s.getClass().getClassLoader());
+
+        ClassLoader cl = Thread.currentThread().getContextClassLoader();
+        System.out.println(cl);
     }
 
 
