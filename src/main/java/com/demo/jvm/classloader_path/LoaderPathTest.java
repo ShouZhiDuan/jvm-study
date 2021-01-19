@@ -1,6 +1,5 @@
 package com.demo.jvm.classloader_path;
 
-import javax.sound.midi.Soundbank;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
