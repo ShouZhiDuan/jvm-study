@@ -25,7 +25,7 @@ public class MyClassLoader extends ClassLoader{
         if (classData == null) {
             throw new ClassNotFoundException();
         } else {
-            /**真正意思获取class对象的方法*/
+            /**真正意义获取class对象的方法*/
             return defineClass(name, classData, 0, classData.length);
         }
     }
