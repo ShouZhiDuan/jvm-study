@@ -27,7 +27,6 @@ public class SerializableMainTest {
     }
     //反序列化
     public static void backSerial() throws IOException, ClassNotFoundException {
-         File file;
          FileInputStream inputStream = new FileInputStream("Person.txt");
          ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
          Person person = (Person) objectInputStream.readObject();
