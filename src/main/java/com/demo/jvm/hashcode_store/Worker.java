@@ -12,10 +12,18 @@ import org.openjdk.jol.info.ClassLayout;
  */
 @Data
 public class Worker {
+
+    /**
+     * static属性是不算到对象的大小里的。
+     */
     private static Integer staticAge = 30;
     private final static Integer finalStaticAge = 31;
     private final  Integer finalAge = 32;
     private static Integer nullAge;
+
+    private int a = 1;
+    private int b = 1;
+    private int c;
 
     public static void main(String[] args) {
         /**
