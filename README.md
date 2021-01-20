@@ -8,3 +8,4 @@
 ### 5、验证HashCode的存储方式(大小端),jol对象大小分析查看。->com.demo.jvm.hashcode_store
 ### 6、查看当前指针压缩大小, -XX:+UseCompressedOops。->com.demo.jvm.hashcode_store
 ### 7、字节码分析StackOverFlowError。->com.demo.jvm.stack_over_flowe_rror
+### 8、试验子类是否会利用父类8字节对齐多出的空间。->com.demo.jvm.hashcode_store.SubWorker
