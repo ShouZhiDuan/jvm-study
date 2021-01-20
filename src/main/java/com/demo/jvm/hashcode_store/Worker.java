@@ -30,7 +30,7 @@ public class Worker {
          * JVM Options：
          *    -XX:-UseCompressedOops关闭压缩指针
          *    -XX:+UseCompressedOops开启压缩指针
-         * 指针压缩：
+         * 指针压缩(对象的引用)：
          *    4G < Mem(heap) < 32G 默认开启指针压缩。
          *    Mem(heap) < 4G 关闭指针压缩。
          *    Mem(heap) > 32G 指针压缩失效。
