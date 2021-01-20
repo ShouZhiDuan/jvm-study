@@ -1,8 +1,6 @@
 package com.demo.jvm.hashcode_store;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
