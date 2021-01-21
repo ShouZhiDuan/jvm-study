@@ -10,3 +10,4 @@
 ### 7、字节码分析StackOverFlowError。->com.demo.jvm.stack_over_flowe_rror
 ### 8、试验子类是否会利用父类8字节对齐多出的空间。->com.demo.jvm.hashcode_store.SubWorker
 ### 9、试验有效大的HeapSize保证指针压缩功能。->com.demo.jvm.heap_size_to_compression_pointer
+### 10、验证JDK1.8字符串常量池存放在堆Heap中。->com.demo.jvm.string_constant_pool_to_heap
