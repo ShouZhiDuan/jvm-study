@@ -17,20 +17,16 @@ public class StringConstantPoolToHeap {
      * 出现：Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
      */
     public static void main(String[] args) {
-//        List<String> list = new ArrayList<>();
-//        for (long i = 0; i < 20000; i++) {
-//            //把数字转成字符串类型，然后放入到字符串常量池中
-//            //list.add(String.valueOf(i).intern());
-//            list.add(String.valueOf(i));
-//        }
-
-
-        String a = String.valueOf(666).intern();
-        String b = "666";
-        String c = String.valueOf("666");
-        System.err.println(a==b);
-        System.err.println(c==b);
-
+        List<String> list = new ArrayList<>();
+        for (long i = 0; i < 20000; i++) {
+            //把数字转成字符串类型，然后放入到字符串常量池中
+            list.add(String.valueOf(i).intern());
+        }
+//        String a = String.valueOf(666).intern();
+//        String b = "666";
+//        String c = String.valueOf("666");
+//        System.err.println(a==b);
+//        System.err.println(c==b);
     }
 
 }
