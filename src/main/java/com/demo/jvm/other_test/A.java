@@ -16,7 +16,16 @@ public class A {
 
 
     public void findClass(){
+        int findClassInt = 10;
         //throw new RuntimeException("A.findClass");
+    }
+
+    public static void main(String[] args) {
+          Integer a = 120;
+          Integer b = 1000;
+          int c = 120;
+          System.out.println(a==b);
+          System.out.println(a==c);
     }
 
 }
