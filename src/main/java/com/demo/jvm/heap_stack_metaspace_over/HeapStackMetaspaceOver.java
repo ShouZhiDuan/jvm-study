@@ -59,7 +59,7 @@ public class HeapStackMetaspaceOver extends ClassLoader{
      * 元空间溢出
      */
     public static List<Class<?>>  metaspaceOver(){
-            List<Class<?>> classes = new ArrayList<Class<?>>();
+            List<Class<?>> classes = new ArrayList<>();
             for (int i = 0; i < 10000000; ++i) {
                     ClassWriter cw = new ClassWriter(0);
                     cw.visit(Opcodes.V1_1, Opcodes.ACC_PUBLIC, "Class" + i, null, "java/lang/Object", null);
