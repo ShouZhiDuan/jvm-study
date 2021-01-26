@@ -59,7 +59,13 @@ public class HeapStackMetaspaceOver extends ClassLoader{
      * 元空间溢出
      */
     public static List<Class<?>>  metaspaceOver(){
-            List<Class<?>> classes = new ArrayList<>();
+        /**
+         * 动态编写java类文件
+         * 动态编译java文件
+         * defineClass加载最终的class文件
+         * loaderClass findClass(toByteArray) defineClass
+         */
+        List<Class<?>> classes = new ArrayList<>();
             for (int i = 0; i < 10000000; ++i) {
                     ClassWriter cw = new ClassWriter(0);
                     cw.visit(Opcodes.V1_1, Opcodes.ACC_PUBLIC, "Class" + i, null, "java/lang/Object", null);
