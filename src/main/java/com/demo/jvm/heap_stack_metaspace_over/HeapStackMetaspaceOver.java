@@ -18,15 +18,16 @@ public class HeapStackMetaspaceOver extends ClassLoader{
 
 
     public static void main(String[] args) {
-            //heapOver(); //堆溢出
-            stackOver(); //栈溢出
+            heapOver(); //堆溢出
+            //stackOver(); //栈溢出
             //metaspaceOver(); //元空间溢出
     }
 
 
     /**
      * 分配堆空间
-     * -Xmx20M -Xms20M
+     * -Xmx20M -Xms20M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=E:\dsz-git-work\common-docs\JVM\jvm-study-file\log_hprof\gc.hprof
+     * -XX:+PrintGCDetails -Xloggc:E:\dsz-git-work\common-docs\JVM\jvm-study-file\log_hprof\gc.log
      * 堆溢出
      */
     public static void  heapOver(){
