@@ -12,6 +12,7 @@
 ### 9、试验有效大的HeapSize保证指针压缩功能。->com.demo.jvm.heap_size_to_compression_pointer
 ### 10、验证JDK1.8字符串常量池存放在堆Heap中。->com.demo.jvm.string_constant_pool_to_heap
 ### 11、模拟堆、栈、元空间(MetaSpace)溢出场景。->com.demo.jvm.heap_stack_metaspace_over
+### 12、Java的引用以及对象的生命周期。->com.demo.jvm.heap_stack_metaspace_over
 
 
 
