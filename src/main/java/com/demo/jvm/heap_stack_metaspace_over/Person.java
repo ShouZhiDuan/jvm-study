@@ -13,7 +13,7 @@ public class Person {
     private String name;
 
     public Person() {
-        System.out.println("人类");
+        //System.out.println("人类");
     }
 
     static class XiaoMing extends Person{

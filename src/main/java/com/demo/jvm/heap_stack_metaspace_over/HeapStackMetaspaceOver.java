@@ -26,8 +26,8 @@ public class HeapStackMetaspaceOver extends ClassLoader{
 
     /**
      * 分配堆空间
-     * -Xmx20M -Xms20M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=E:\dsz-git-work\common-docs\JVM\jvm-study-file\log_hprof\gc.hprof
-     * -XX:+PrintGCDetails -Xloggc:E:\dsz-git-work\common-docs\JVM\jvm-study-file\log_hprof\gc.log
+     * -XX:+PrintFlagsFinal
+     * -Xmx20M -Xms20M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=E:\dsz-git-work\common-docs\JVM\jvm-study-file\log_hprof\gc.hprof -XX:+PrintGCDetails -XX:+PrintGCDetails -Xloggc:E:\dsz-git-work\common-docs\JVM\jvm-study-file\log_hprof\gc.log
      * 堆溢出
      */
     public static void  heapOver(){
