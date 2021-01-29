@@ -1,13 +1,18 @@
 package com.demo.jvm.other_test;
 
 
+import com.alibaba.fastjson.JSON;
+import lombok.Data;
 
 /**
  * @Auther: ShouZhi@Duan
  * @Date: 2021/1/19 13:57
  * @Description:
  */
+@Data
 public class B extends A {
+
+    private int b = 10;
 
     public B() {
 
@@ -22,15 +27,17 @@ public class B extends A {
     }
 
     public static void main(String[] args) {
-        A a = new B();
-        a.a = 20;
-        a.classLoad();
-        System.out.println(a.a);
-        String s = new String();
-        System.out.println(s.getClass().getClassLoader());
-
-        ClassLoader cl = Thread.currentThread().getContextClassLoader();
-        System.out.println(cl);
+//        A a = new B();
+//        a.a = 20;
+//        a.classLoad();
+//        System.out.println(a.a);
+//        String s = new String();
+//        System.out.println(s.getClass().getClassLoader());
+//
+//        ClassLoader cl = Thread.currentThread().getContextClassLoader();
+//        System.out.println(cl);
+        B b = new B();
+        System.out.println(JSON.toJSONString(b));
     }
 
 
