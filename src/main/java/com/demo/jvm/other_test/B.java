@@ -36,8 +36,13 @@ public class B extends A {
 //
 //        ClassLoader cl = Thread.currentThread().getContextClassLoader();
 //        System.out.println(cl);
-        B b = new B();
-        System.out.println(JSON.toJSONString(b));
+//        B b = new B();
+//        System.out.println(JSON.toJSONString(b));
+
+        int ordinal = Stage.HIGH.ordinal();
+        System.out.println(Stage.values()[ordinal].getText());
+
+
     }
 
 
