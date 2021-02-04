@@ -1,0 +1,109 @@
+Classfile /E:/dsz-git-work/jvm-study-dsz/src/main/java/com/demo/jvm/other_test/A.class
+  Last modified 2021Äê1ÔÂ21ÈÕ; size 660 bytes
+  MD5 checksum 8535052cf4fb577a19279ad2915d2766
+  Compiled from "A.java"
+public class com.demo.jvm.other_test.A
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #7                          // com/demo/jvm/other_test/A
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #8.#23         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #7.#24         // com/demo/jvm/other_test/A.a:I
+   #3 = Fieldref           #25.#26        // java/lang/System.out:Ljava/io/PrintStream;
+   #4 = String             #27            // A.classLoad
+   #5 = Methodref          #28.#29        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #6 = Methodref          #7.#30         // com/demo/jvm/other_test/A.findClass:()V
+   #7 = Class              #31            // com/demo/jvm/other_test/A
+   #8 = Class              #32            // java/lang/Object
+   #9 = Utf8               a
+  #10 = Utf8               I
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               LocalVariableTable
+  #16 = Utf8               this
+  #17 = Utf8               Lcom/demo/jvm/other_test/A;
+  #18 = Utf8               classLoad
+  #19 = Utf8               findClass
+  #20 = Utf8               findClassInt
+  #21 = Utf8               SourceFile
+  #22 = Utf8               A.java
+  #23 = NameAndType        #11:#12        // "<init>":()V
+  #24 = NameAndType        #9:#10         // a:I
+  #25 = Class              #33            // java/lang/System
+  #26 = NameAndType        #34:#35        // out:Ljava/io/PrintStream;
+  #27 = Utf8               A.classLoad
+  #28 = Class              #36            // java/io/PrintStream
+  #29 = NameAndType        #37:#38        // println:(Ljava/lang/String;)V
+  #30 = NameAndType        #19:#12        // findClass:()V
+  #31 = Utf8               com/demo/jvm/other_test/A
+  #32 = Utf8               java/lang/Object
+  #33 = Utf8               java/lang/System
+  #34 = Utf8               out
+  #35 = Utf8               Ljava/io/PrintStream;
+  #36 = Utf8               java/io/PrintStream
+  #37 = Utf8               println
+  #38 = Utf8               (Ljava/lang/String;)V
+{
+  public int a;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public com.demo.jvm.other_test.A();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: bipush        10
+         7: putfield      #2                  // Field a:I
+        10: return
+      LineNumberTable:
+        line 8: 0
+        line 10: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/demo/jvm/other_test/A;
+
+  public void classLoad();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #4                  // String A.classLoad
+         5: invokevirtual #5                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: aload_0
+         9: invokevirtual #6                  // Method findClass:()V
+        12: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 8
+        line 15: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Lcom/demo/jvm/other_test/A;
+
+  public void findClass();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=1
+         0: bipush        10
+         2: istore_1
+         3: return
+      LineNumberTable:
+        line 19: 0
+        line 21: 3
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   Lcom/demo/jvm/other_test/A;
+            3       1     1 findClassInt   I
+}
+SourceFile: "A.java"
