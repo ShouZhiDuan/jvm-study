@@ -3,7 +3,6 @@ package com.demo.jvm;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.core.io.support.SpringFactoriesLoader;
 
 @SpringBootApplication
 public class JvmStudyDszApplication {
