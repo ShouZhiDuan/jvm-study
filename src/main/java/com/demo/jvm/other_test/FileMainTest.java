@@ -1,6 +1,5 @@
 package com.demo.jvm.other_test;
 
-import com.alibaba.fastjson.JSON;
 import org.junit.Test;
 import org.springframework.core.io.UrlResource;
 import org.springframework.core.io.support.PropertiesLoaderUtils;
